@@ -65,8 +65,6 @@ apiVersion: route.openshift.io/v1
 metadata:
   name: elasticsearch
   namespace: {{ namespace }}
-  annotations:
-    cert-utils-operator.redhat-cop.io/certs-from-secret: letsencrypt
   labels:
     app: elasticsearch
     role: api

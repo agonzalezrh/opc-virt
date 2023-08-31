@@ -62,8 +62,6 @@ kind: Route
 metadata:
   name: kibana
   namespace: {{ namespace }}
-  annotations:
-    cert-utils-operator.redhat-cop.io/certs-from-secret: letsencrypt
 spec:
   host: kibana.{{ baseDomain }}
   to:

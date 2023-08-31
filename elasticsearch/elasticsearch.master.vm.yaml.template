@@ -133,10 +133,6 @@ spec:
               serial: 0000sh
             - disk:
                 bus: virtio
-              name: letsencrypt
-              serial: 00cert
-            - disk:
-                bus: virtio
               name: data
               serial: datadisk
           interfaces:
@@ -179,9 +175,6 @@ spec:
         - configMap:
             name: install-scripts
           name: install-scripts
-        - secret:
-            secretName: letsencrypt
-          name: letsencrypt
 ---
 kind: Route
 apiVersion: route.openshift.io/v1
